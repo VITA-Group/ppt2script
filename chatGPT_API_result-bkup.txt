@@ -1,0 +1,89 @@
+(note, this script is generated from a similar but different version than demo.pptx, by ChatGPT)
+
+-------------
+Page 1 / 11:
+1. Learning and Reasoning with Physical, Structural, and Symbolic Priors.
+2. Team members: xx
+Mentor: xx
+3. Ph.D. Defense.
+
+Thank you everyone for joining us today at the X Conference. I am Alex Miller, a graduate student pursuing my Ph.D., and I'm excited to present my research on "Exploring Learning and Reasoning through Physical, Structural, and Symbolic Priors." Guided by my mentor, Professor Morgan Roberts, and with the invaluable input from my respected panel members, Dr. Emily Hayes, Dr. Adrian Scott, Dr. Sophie Kim, and Dr. Daniel Evans, I've delved deeply into this fascinating realm. Throughout my journey, I've had the privilege to investigate various aspects. So, let's dive into my conference presentation and explore the insights and contributions I've made. Let's get started!
+-------------
+Page 2 / 11:
+1. On this slide, we have a table presenting different methods and algorithms.
+2. The table shows the performance of three algorithms, algorithm 1, algorithm 2, and algorithm 3, using two different methods, CSSM and SSPM.
+3. As we can see, algorithm 1 performs the best with CSSM, while algorithm 2 performs the best with SSPM.
+4. Unfortunately, we don't have any chart data available for this comparison.
+5. This table will help us understand the performance of these algorithms and methods, which is important for our research on learning and reasoning with physical, structural, and symbolic priors.
+6. Now let's move on to the next slide for a deeper discussion on the data and motivation behind our research.
+-------------
+Page 3 / 11:
+1. In order to develop generalizable domain-expert models with fewer data, we need to understand the motivation behind our research.
+2. The motivation is to address the challenge of limited data by using chain-of-thought prompting and progressive code generation.
+3. By developing a program synthesis language model called ChainCoder, we can generate Python code progressively from coarse to fine in multiple passes.
+4. This approach allows the model to reflect the structured thought process of "outline-then-detail" and generate higher-quality solutions.
+5. To achieve this, we decompose the source code into layout frame components and accessory components using abstract syntax tree parsing.
+6. We then leverage a tailored transformer architecture to jointly encode the natural language descriptions and syntactically aligned I/O data samples.
+-------------
+Page 4 / 11:
+1. The previous slide provided an overview of our motivation and the approach we are taking to address the challenge of limited data.
+2. Now, let's focus on the specific components and techniques we are using in ChainCoder to generate code progressively.
+3. One important component is the decomposition of source code into layout frame components and accessory components using abstract syntax tree parsing.
+4. This hierarchical representation helps us construct a structured thought process, allowing the model to generate code from coarse to fine in multiple passes.
+5. Additionally, we have reformulated our prediction target into a multi-pass objective, where each pass generates a subsequence that is concatenated in the hierarchy.
+6. To encode the natural language descriptions and syntactically aligned I/O data samples, we are leveraging a tailored transformer architecture.
+-------------
+Page 5 / 11:
+1. The previous slide highlighted the use of structure prior in ChainCoder to develop generalizable domain-expert models with fewer data.
+2. Now, let's shift our focus to another important component of ChainCoder called the Physical Prior.
+3. The Physical Prior component helps in generating code that reflects specific physical properties or constraints of the problem being addressed.
+4. This component, along with the Structure Prior, helps ChainCoder to generate code progressively by considering both the domain-specific knowledge and the hierarchical representation of the source code.
+5. By incorporating these priors, ChainCoder aims to improve the reasoning procedure and guide the language model to generate higher-quality solutions.
+6. Some examples of use cases where ChainCoder can be applied include climate modeling, traffic control, social network analysis, and optimization problems.
+-------------
+Page 6 / 11:
+1. Continuing on the topic of ChainCoder, let's now talk about the Physical Prior component highlighted in this slide.
+2. The Physical Prior component plays a crucial role in generating code that reflects specific physical properties or constraints of the problem at hand.
+3. By incorporating this component into the progressive generation process of ChainCoder, it ensures that the generated code aligns with the desired physical aspects of the algorithm.
+4. Along with the Structure Prior, which we discussed on the previous slide, the Physical Prior helps ChainCoder in generating code progressively by considering both domain-specific knowledge and the hierarchical structure of the source code.
+5. Through the integration of these priors, ChainCoder aims to enhance the reasoning procedure and guide the language model towards producing superior code solutions.
+6. The application domains of ChainCoder range from climate modeling and traffic control to social network analysis and optimization problems, where the consideration of physical properties is of utmost importance.
+-------------
+Page 7 / 11:
+1. Building upon the previous slides, we now move on to discuss the usage of layout frames in the ChainCoder program synthesis language model.
+2. The layout frame of the current slide, titled "Structure Prior," helps us understand the importance of outlining the rough control flow of a complicated algorithm before generating the code.
+3. Typically, human programmers follow an iterative process of enriching the initial control flow to generate syntactically correct structures and variables in a hierarchical manner.
+4. However, state-of-the-art language models generate code in a single pass, without reflecting this structured thought process of "outline-then-detail."
+5. Inspired by the concept of chain-of-thought prompting, our ChainCoder model proposes a progressive generation approach, where code is generated from coarse to fine in multiple passes.
+6. This hierarchical representation and progressive generation approach not only eases the reasoning procedure but also guides the language model to generate higher-quality solutions.
+-------------
+Page 8 / 11:
+1. Continuing with our discussion on the ChainCoder program synthesis language model, let's focus on the structure prior represented by the layout frame on this slide.
+2. As we can see, the problem description is outlined with a clear I/O example, indicating the inputs and expected outputs of the program.
+3. The provided Python code, defined as the "solution" function, showcases the implementation details of the program.
+4. Additionally, the neural network architecture, represented by a transformer, is leveraged to encode the natural language descriptions and syntactically aligned I/O data samples.
+5. It's worth noting that the previous methods had a low solve rate, especially for more difficult questions, which further emphasizes the need for an improved approach like ChainCoder.
+6. Through extensive evaluations, we have demonstrated that our progressive generation strategy significantly outperforms existing techniques, leading to higher-quality solutions.
+-------------
+Page 9 / 11:
+1. Now, let's dive into the training and evaluation process of the ChainCoder program synthesis model, as indicated by the "Train And Eval" heading on this slide.
+2. This slide serves as a guide to follow the pipeline of AlphaCode, our program synthesis framework.
+3. By following this pipeline, we can effectively train and evaluate the ChainCoder model to ensure its optimal performance.
+4. The training process involves providing ample training data to the model, enabling it to learn and generate Python code progressively from coarse to fine.
+5. The evaluation phase allows us to assess the model's performance and measure how well it can generate high-quality solutions.
+6. Through meticulous train and eval procedures, we can demonstrate the effectiveness and superiority of ChainCoder in program synthesis tasks.
+-------------
+Page 10 / 11:
+1. Now, let's shift our focus to the results obtained from the ChainCoder program synthesis model, as indicated by the "Results" heading on this slide.
+2. This slide showcases the outcome of our evaluations and provides insights into the performance of ChainCoder in generating high-quality solutions.
+3. Additionally, we have conducted ablation studies to observe the impact of various factors on the model's performance.
+4. We have also compared ChainCoder with AlphaCode, another program synthesis framework, to highlight its superiority.
+5. To gain a deeper understanding of the generated Python code, we have analyzed the token occurrence frequencies.
+6. By examining the results and conducting extensive evaluations, we can validate the effectiveness of ChainCoder and its progressive generation methodology in improving the reasoning procedure in program synthesis tasks.
+-------------
+Page 11 / 11:
+1. Now, let's turn our attention to the "Results" section on this slide. 
+2. In this section, we will explore the numerical results and ablation studies conducted for the ChainCoder program synthesis model. 
+3. By examining these results, we can gain valuable insights into the effectiveness and performance of our model. 
+4. These evaluations and studies provide important information to validate the superiority of ChainCoder over other program synthesis frameworks, such as AlphaCode. 
+5. So, let's dive into the numbers and analysis to further understand the impact and capabilities of ChainCoder.
